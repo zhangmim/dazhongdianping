@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <script src="js/fontsize.js"></script>
+</head>
+<body>
+<!--第一页-->
+<div class="page page1">
+    <img src="img/cover.png" alt="" class="pic1 animated movedown"/>
+    <img src="img/wording_cover.png" alt="" class="pic2 animated moveright"/>
+</div>
+<!--第二页-->
+<div class="page page2 pageDown">
+
+    <div class="subpage page2-1">
+        <img src="img/wording.png" alt="" class="pic1 animated moveup hide"/>
+        <img src="img/floating_develop.png" alt="" class="pic2 animated moveright hide"/>
+        <img src="img/people.png" alt="" class="pic3 animated moveright hide"/>
+        <img src="img/circle.png" alt="" class="pic4 animated movedown hide"/>
+        <img src="img/check_design.png" alt="" class="pic5"/>
+        <img src="img/dot1.png" alt="" class="pic6"/>
+    </div>
+    
+    <div class="subpage page2-2 pageRight">
+        <img src="img/introduction.png" alt="" class="pic1"/>
+        <img src="img/btn_develop.png" alt="" class="pic2 "/>
+        <img src="img/dot2.png" alt="" class="pic3"/>
+    </div>
+</div>
+<!--第三页-->
+<div class="page page3 pageDown">
+    <div class="subpage page3-1">
+        <img src="img/wording_design.png" alt="" class="pic1 animated moveup hide"/>
+        <img src="img/floating_design.png" alt="" class="pic2 animated moveright hide"/>
+        <img src="img/people_design.png" alt="" class="pic3 animated moveup hide"/>
+        <img src="img/circle-design.png" alt="" class="pic4 animated movedown hide"/>
+        <img src="img/check_design.png" alt="" class="pic5"/>
+        <img src="img/dot1.png" alt="" class="pic6"/>
+    </div>
+
+    <div class="subpage page3-2 pageRight">
+        <img src="img/introduction_design.png" alt="" class="pic1"/>
+        <img src="img/btn_design.png" alt="" class="pic2 "/>
+        <img src="img/dot2.png" alt="" class="pic3"/>
+    </div>
+</div>
+<!--第四页-->
+<div class="page page4 pageDown">
+    <div class="subpage page4-1">
+        <img src="img/wording_production.png" alt="" class="pic1 animated moveup hide"/>
+        <img src="img/floating_production.png" alt="" class="pic2 animated moveright hide"/>
+        <img src="img/people_production.png" alt="" class="pic3 animated moveleft hide"/>
+        <img src="img/circle-production.png" alt="" class="pic4 animated movedown hide"/>
+        <img src="img/check_design.png" alt="" class="pic5"/>
+        <img src="img/dot1.png" alt="" class="pic6"/>
+    </div>
+
+    <div class="subpage page4-2 pageRight">
+        <img src="img/introduction_production.png" alt="" class="pic1"/>
+        <img src="img/btn_production.png" alt="" class="pic2 "/>
+        <img src="img/dot2.png" alt="" class="pic3"/>
+    </div>
+</div>
+<!--第五页-->
+<div class="page page5 pageDown">
+    <img src="img/pic_back.png" alt="" class="pic1"/>
+    <img src="img/btn_join.png" alt="" class="pic2"/>
+</div>
+
+<div class="jiantou animated move infinite">
+    <img src="img/icon_up.png" alt=""/>
+</div>
+</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script src="js/touch.min.js"></script>
+<script>
+    var i=0;
+    var a=$(".page").length-1;
+    $("body").swipeUp(
+            function(){
+                if(i<a){
+                    $(".page").eq(i).addClass("pageUp");
+                    $(".page").eq(i).find("img").addClass("hide");
+                    i++;
+                    $(".page").eq(i).removeClass("pageDown");
+                    $(".page").eq(i).find("img").removeClass("hide")
+                }}
+    );
+    $("body").swipeDown(
+            function(){
+                if(i>0){
+                    $(".page").eq(i).addClass("pageDown");
+                    $(".page").eq(i).find("img").addClass("hide");
+                    i--;
+                    $(".page").eq(i).removeClass("pageUp");
+                    $(".page").eq(i).find("img").removeClass("hide");
+
+                }}
+    );
+    $(".page2,.page3,.page4").swipeLeft(
+            function(){
+                $(this).children("div").eq(0).addClass("pageLeft");
+                $(this).children("div").eq(0).children().addClass("hide");
+                $(this).children("div").eq(1).removeClass("pageRight");
+
+            }
+    );
+    $(".page2,.page3,.page4").swipeRight(
+            function(){
+                $(this).children("div").eq(0).removeClass("pageLeft");
+                $(this).children("div").eq(0).children().removeClass("hide");
+                $(this).children("div").eq(1).addClass("pageRight");
+
+            }
+    )
+</script>

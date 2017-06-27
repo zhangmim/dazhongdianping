@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.page,.subpage{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*5ÆÁÖØµþ*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform 0.5s linear;
+}
+.page1{
+    background: #136562;
+}
+.page2{
+    background: #934fcc;
+}
+.page3{
+    background: #f44400;
+}
+.page4{
+    background: #ffbd40;
+}
+.page5{
+    background: #136562;
+}
+
+.page1 .pic1{
+    width: 4.96rem;
+    height: 6.05rem;
+    display: block;
+    margin: 0.3rem auto 0 auto;
+}
+.page1 .pic2{
+    width: 3.69rem;
+    height: 2.59rem;
+    display: block;
+    margin: 1rem auto 0 auto;
+}
+
+.page2-1 .pic1{
+    display: block;
+    width: 3.17rem;
+    height: 2.23rem;
+    margin: 0.2rem auto 0 auto;
+}
+.page2-1 .pic2{
+    width: 4.6rem;
+    height: 6.6rem;
+    position: absolute;
+    left: 50%;
+    top: 1.3rem;
+    z-index: 99;
+    margin-left: -2.3rem;
+}
+.page2-1 .pic3{
+    width: 4.28rem;
+    height: 4.35rem;
+    position: absolute;
+    left: 50%;
+    top: 4.5rem;
+    z-index: 99;
+    margin-left: -2.1rem;
+}
+.page2-1 .pic4{
+    width: 4.81rem;
+    height: 4.87rem;
+    position: absolute;
+    left: 50%;
+    top: 3.5rem;
+    margin-left: -2.45rem;
+
+}
+.page2-1 .pic5{
+    display: block;
+    width: 2.84rem;
+    height: 0.33rem;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    bottom: 1.5rem;
+    margin-left: -1.42rem;
+}
+.page2-1 .pic6{
+    display: block;
+    width: 0.41rem;
+    height: 0.12rem;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    bottom: 1rem;
+    margin-left: -0.2rem;
+}
+.page2-2 .pic1{
+    display: block;
+    width: 5.87rem;
+    height: 7.14rem;
+    margin: 0.3rem auto 0 auto;
+}
+.page2-2 .pic2{
+    display: block;
+    width: 5.2rem;
+    height: 0.88rem;
+    margin: 1.5rem auto 0 auto;
+}
+.page2-2 .pic3{
+    display: block;
+    width: 0.41rem;
+    height: 0.12rem;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    bottom: 1rem;
+    margin-left: -0.2rem;
+}
+
+.page3-1 .pic1{
+    display: block;
+    width: 3.17rem;
+    height: 2.23rem;
+    margin: 0.2rem auto 0 auto;
+}
+.page3-1 .pic2{
+    width: 4.96rem;
+    height: 2.81rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 5.5rem;
+    z-index: 99;
+
+}
+.page3-1 .pic3{
+    width: 3.45rem;
+    height: 5.29rem;
+    position: absolute;
+    left: 2rem;
+    top: 3.8rem;
+    z-index: 99;
+
+}
+.page3-1 .pic4{
+    width: 4.81rem;
+    height: 4.87rem;
+    position: absolute;
+    left: 50%;
+    top: 3.5rem;
+    margin-left: -2.45rem;
+
+}
+.page3-1 .pic5{
+    display: block;
+    width: 2.84rem;
+    height: 0.33rem;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    bottom: 1.5rem;
+    margin-left: -1.42rem;
+}
+.page3-1 .pic6{
+    display: block;
+    width: 0.41rem;
+    height: 0.12rem;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    bottom: 1rem;
+    margin-left: -0.2rem;
+}
+.page3-2 .pic1{
+    display: block;
+    width: 5.87rem;
+    height: 7.14rem;
+    margin: 0.3rem auto 0 auto;
+}
+.page3-2 .pic2{
+    display: block;
+    width: 5.2rem;
+    height: 0.88rem;
+    margin: 1.5rem auto 0 auto;
+}
+.page3-2 .pic3{
+    display: block;
+    width: 0.41rem;
+    height: 0.12rem;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    bottom: 1rem;
+    margin-left: -0.2rem;
+}
+
+.page4-1 .pic1{
+    display: block;
+    width: 3.24rem;
+    height: 2.41rem;
+    margin: 0.2rem auto 0 auto;
+}
+.page4-1 .pic2{
+    width: 5.43rem;
+    height: 3.74rem;
+    position: absolute;
+    left: 0.3rem;
+    top: 4.8rem;
+    z-index: 99;
+}
+.page4-1 .pic3{
+    width: 3.22rem;
+    height: 4.29rem;
+    position: absolute;
+    left: 1.4rem;
+    top: 4rem;
+    z-index: 99;
+
+}
+.page4-1 .pic4{
+    width: 5.06rem;
+    height: 5.06rem;
+    position: absolute;
+    left: 50%;
+    top: 3.5rem;
+    margin-left: -2.45rem;
+
+}
+.page4-1 .pic5{
+    display: block;
+    width: 2.84rem;
+    height: 0.33rem;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    bottom: 1.5rem;
+    margin-left: -1.42rem;
+}
+.page4-1 .pic6{
+    display: block;
+    width: 0.41rem;
+    height: 0.12rem;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    bottom: 1rem;
+    margin-left: -0.2rem;
+}
+.page4-2 .pic1{
+    display: block;
+    width: 5.87rem;
+    height: 7.14rem;
+    margin: 0.3rem auto 0 auto;
+}
+.page4-2 .pic2{
+    display: block;
+    width: 5.2rem;
+    height: 0.88rem;
+    margin: 1.5rem auto 0 auto;
+}
+.page4-2 .pic3{
+    display: block;
+    width: 0.41rem;
+    height: 0.12rem;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    bottom: 1rem;
+    margin-left: -0.2rem;
+}
+
+.page5 .pic1{
+    display: block;
+    width: 5.63rem;
+    height: 4.86rem;
+    margin: 1.5rem auto 0 auto;
+}
+.page5 .pic2{
+    display: block;
+    width: 5.2rem;
+    height: 0.88rem;
+    margin: 1.5rem auto 0 auto;
+}
+.hide{
+    display: none!important;
+}
+.jiantou{
+    width: 0.5rem;
+    height: 0.28rem;
+    z-index: 999;
+    position: fixed;
+    left:50%;
+    bottom: 1.3rem;
+    margin-left: -0.25rem;
+}
+img{
+    width: 100%;
+    height: 100%
+}
+/*ÉÏ·­Ò³*/
+.pageUp{
+    transform: translateY(-100%);
+}
+/*ÏÂ·­Ò³*/
+.pageDown{
+    transform: translateY(100%);
+}
+/*×ó·­Ò³*/
+.pageLeft{
+    transform: translateX(-100%);
+}
+/*ÓÒ·­Ò³*/
+.pageRight{
+    transform: translateX(100%);
+}

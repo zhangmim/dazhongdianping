@@ -1,0 +1,46 @@
+.animated{
+    animation: 1s linear;
+}
+.infinite{
+    animation-iteration-count: infinite;
+}
+/*—” ±*/
+.dalay1{
+    animation-delay: 1s;
+}
+.movedown{
+    animation-name: movedown;
+}
+@keyframes movedown{
+    0%{transform: translateY(-10rem)}
+    100%{transform: translateY(0rem)}
+}
+.moveright{
+    animation-name: moveright;
+}
+@keyframes moveright{
+    0%{transform: translateX(-10rem)}
+    100%{transform: translateX(0rem)}
+}
+.move{
+    animation-name: move;
+}
+@keyframes move{
+    0%{transform: translateY(0);opacity: 0}
+    50%{opacity: 0.3;}
+    100%{transform: translateY(0.3rem);opacity: 1}
+}
+.moveup{
+    animation-name: moveup;
+}
+@keyframes moveup {
+    0%{transform: translateY(3rem)}
+    100%{transform: translateY(0)}
+}
+.moveleft{
+    animation-name: moveleft;
+}
+@keyframes moveleft{
+    0%{transform: translateX(10rem)}
+    100%{transform: translateX(0rem)}
+}
